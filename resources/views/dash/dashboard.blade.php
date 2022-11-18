@@ -69,20 +69,21 @@
                   </div>
                 </div>
               </div> 
-              
+
               <div class="col-sm-4">
                 <div class="card">   
                   <div class="bg-dark" style="width: 4em; height: 4em; border-radius: 1em; margin: -1em; box-shadow: 1px 1px 5px;">
-                      <h5 class="fa fa-shapes text-light" style="padding: 1em;"></h5>
+                      <h5 class="fa fa-donate text-light" style="padding: 1em;"></h5>
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title text-dark">Total: {{$total}}</h5>
+                    <h5 class="card-title text-dark">Pueden invertir: {{$inversion}}</h5>
                   </div>
                 </div>
               </div>
- 
-
+              
               </div><!--row-->
+ <h3 style="float: right; padding-right: 2em; color: #3e4095; ">Total: {{$total}}</h3>
+
               <br>
 
           

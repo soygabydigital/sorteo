@@ -9,6 +9,6 @@ class Participante extends Model
 {
     public $timestamps = true;
     protected $table = 'participantes';
-    protected $fillable = ['username','nombres','genero','nicho', 'tipo', 'residencia'];
+    protected $fillable = ['username','nombres','genero','nicho', 'tipo', 'residencia', 'inversion'];
 }
  

@@ -50,6 +50,7 @@
 											<th class="text-center">Nicho</th>
 											<th class="text-center">Tipo</th>
 											<th class="text-center">Residencia</th>
+											<th class="text-center">Inversion</th>
 											<th class="text-center">Acción</th>
 										</tr>
 									</thead>
@@ -81,6 +82,14 @@
 
 
 											<td>{{ $participante->residencia }}</td>
+
+											@if($participante->inversion==1)
+												<td></td>						
+											@elseif($participante->inversion==2)
+												<td>Sí</td>	
+											@elseif($participante->inversion==3)
+												<td>No</td>
+											@endif
 
 										
 											<td width="110" class="text-center">

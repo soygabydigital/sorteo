@@ -21,6 +21,7 @@ class CreateParticipantesTable extends Migration
             $table->string('nicho',20)->nullable();
             $table->string('tipo',20);
             $table->string('residencia',50)->nullable();
+            $table->string('inversion',50)->nullable();
             $table->timestamps();
         });
     }

@@ -22,10 +22,12 @@ class DashboardController extends Controller
 
           $otros=Participante::where('tipo', '3')->count();
 
+          $inversion=Participante::where('inversion', '2')->count();
+
           $total=Participante::count();
 
        $participantes=['fem'=>$fem, 'mas'=>$mas, 'total'=>$total, 'empresarios'=>$empresarios, 
-       'emprendedores'=>$emprendedores, 'otros'=>$otros];   
+       'emprendedores'=>$emprendedores, 'inversion'=>$inversion, 'otros'=>$otros];   
 
  
   

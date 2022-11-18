@@ -64,13 +64,25 @@
                                     </div>
                                 </div> 
 
-                                <div class="col-xs-12 col-sm-12 col-md-12"> 
+                                <div class="col-xs-6 col-sm-6 col-md-6"> 
                                     <div class="form-group">
                                         <label for="residencia">Residencia</label>
                                         {!! Form::text('residencia',null,array('class'=>'form-control text-dark'))  !!}
                                         @error('residencia') <span class="error text-danger">{{ $message }}</span> @enderror        
                                     </div>
                                 </div> 
+
+                                <div class="col-xs-6 col-sm-6 col-md-6"> 
+                                    <div class="form-group">
+                                        <label for="inversion">Capacidad de Inversión en Hosting y Dominio</label>
+                                        <select name="inversion" id="inversion" class="form-control">
+                                            <option value="1">Sin especificar</option>
+                                            <option value="2">Sí</option>
+                                            <option value="3">No</option>
+                                        </select>
+                                    </div>
+                                </div> 
+
                             </div>  
 
                              {!! Form::hidden('id',null,array('class'=>'form-control'))  !!} 
